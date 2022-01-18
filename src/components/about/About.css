@@ -1,0 +1,93 @@
+.about-container{
+    width: 100%;
+    height: 720px;
+    background-color: #0A0A0D;
+    color: #fff;
+    padding-top: 70px;
+    padding-bottom: 127px;
+}
+.about-container .title-about{
+    margin: 0px auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.about-container .title-about span{
+    color: #0A0A0D;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #64BD00;;
+}
+
+.about-container .content-container-about{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 100%;
+    align-items: center;
+}
+.about-container .content-container-about .profile-section{
+    width: 47%;
+ }
+
+
+ .presentation .presentation__title{
+     font-weight: 600;
+     font-size: 24px;
+     -webkit-text-stroke-width: 1px;
+     -webkit-text-stroke-color: #fff;;
+
+ }
+ .presentation .presentation__title span{
+     color: #64BD00;
+     -webkit-text-stroke-width: 1px;
+     -webkit-text-stroke-color: #64BD00;;
+     
+ }
+
+ .presentation .presentation__content{
+    line-height: 168.4%;
+    font-size: 24px;
+    text-align: justify;
+ }
+
+ .content-container-about .presentation .btn-download-cv{
+     background-color: #64BD00;
+     color: #fff;
+     border: none;
+     border-radius: 40px;
+     width: 391px;
+     height: 62px;
+     font-weight: 600;
+     font-size: 24px;
+     cursor: pointer;
+ }
+
+ .profile-data{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+ }
+
+
+ .profile-data .profile__column-one, .profile-data .profile__column-two {
+     width: 47%;
+ }
+
+ .profile-data .profile__column-one .about-item, .profile-data .profile__column-two .about-item{
+     font-size: 24px;
+     font-weight: 600;
+     -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+    line-height: 168.4%;
+ }
+
+ .profile-data .profile__column-one .about-item span, .profile-data .profile__column-two .about-item span{
+    font-size: 22px;
+    font-weight: lighter;
+    margin-left: 8px;
+    -webkit-text-stroke-width: 0px;
+}
