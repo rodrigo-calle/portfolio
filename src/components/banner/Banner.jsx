@@ -11,7 +11,7 @@ import {
 } from "react-icons/bs";
 import { BiRocket } from "react-icons/bi";
 
-import "./Banner.css";
+import "./Banner.scss";
 
 const Banner = () => {
   return (
@@ -25,35 +25,38 @@ const Banner = () => {
         <div className="banner-container__header">
           <div className="logo">RODRIGO</div>
           <div className="main-menu">
+          <ul class="main-menu-container">
             <li className="main-menu__item item-active">
               {" "}
-              <AiFillHome className="icon-menu" /> Home
+              <AiFillHome className="icon-menu" />
+              <p className="title-menu">Home</p>
             </li>
             <li className="main-menu__item">
               {" "}
               <BsFillPersonFill className="icon-menu" />
-              About
+              <p className="title-menu">Abount</p>
             </li>
             <li className="main-menu__item">
               {" "}
               <BiRocket className="icon-menu" />
-              Servicios{" "}
+              <p className="title-menu">Servicios</p>
             </li>
             <li className="main-menu__item">
               {" "}
               <BsFillBriefcaseFill className="icon-menu" />
-              Portafolio
+              <p className="title-menu">Portafolio</p>
             </li>
             <li className="main-menu__item">
               {" "}
               <BsYoutube className="icon-menu" />
-              Canal
+              <p className="title-menu">Canal</p>
             </li>
             <li className="main-menu__item">
               {" "}
               <BsPersonSquare className="icon-menu" />
-              Contacto
+              <p className="title-menu">Contacto</p>
             </li>
+          </ul>            
           </div>
         </div>
         <div className="banner-content">
