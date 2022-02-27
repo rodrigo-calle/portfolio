@@ -1,0 +1,90 @@
+@import '../../breakpoints';
+
+.knowledge-container{
+    width:100%;
+    height: fit-content;
+    padding: 65px 0px;
+    background-color: #0A0A0D;
+    .title-knowledge {
+        margin: 0px auto;
+        text-align: center;
+        font-weight: bold;
+        font-size: 40px;
+        color: #fff;
+        margin-bottom: 45px;
+        span {
+            color: #0A0A0D;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: #64BD00;
+        }    
+    }
+    .first-container-knowledges {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        margin: 0px auto;
+        justify-content: space-between;
+        .first-section-knowledges {
+            width: 50%;
+            .knowledge-item {
+                margin:10px 0px;
+                .label-knowledge {
+                    color: #fff;
+                    font-weight: bold;
+                }
+                .knowledge-range {
+                    width: 80%;
+                    background-color: #000;
+                }
+            }
+        }    
+    }
+    .second-section-knowledges {
+        width: 50%;
+        .knowledge-item {
+            margin:10px 0px;
+            
+            .label-knowledge {
+                color: #fff;
+                font-weight: bold;
+                text-align: left;
+            }
+            .knowledge-range {
+                width: 80%;
+                background-color: #000;
+            }
+        }
+    }
+
+    .knowledges-container-button{
+        width: 80%;
+        margin: 0px auto;
+        margin-top: 35px    ;
+        text-align: center;
+        .btn-more-knowlodge {
+            height: 45px;
+            width: 200px;
+            background-color: #000;
+            border: thin solid #64bd00;
+            border-radius: 44px;
+            display: flex;
+            margin: 0 auto;
+            flex-direction: column;
+            justify-content: center;
+            cursor: pointer;
+            p {
+                color: #64bd00;
+                font-weight: bold;
+                font-size: 18px;
+                text-align: center;
+                width: fit-content;
+                margin: 0 auto;
+            }
+
+            img {
+                height: 20px;
+                margin: 0 auto;
+            }
+        }
+    }
+}
