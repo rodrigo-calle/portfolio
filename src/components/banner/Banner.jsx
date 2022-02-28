@@ -98,10 +98,18 @@ const Banner = () => {
             </p>
 
             <div className="info__social">
+            <a href="https://twitter.com/Rodrigo_CesarC">
               <BsTwitter />
+            </a>
+            <a href="https://www.linkedin.com/in/rodrigocallecastillo/" target="_blank" rel="noreferrer">
               <BsInstagram />
+            </a>
+            <a href="https://www.linkedin.com/in/rodrigocallecastillo/" target="_blank" rel="noreferrer">
               <AiFillLinkedin />
+            </a>
+            <a href="https://github.com/rodrigo-calle" target="_blank" rel="noreferrer">
               <BsGithub />
+            </a>            
             </div>
             <div className="info__buttons">
             <a 
