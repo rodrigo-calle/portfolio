@@ -98,16 +98,20 @@ const Banner = () => {
             </p>
 
             <div className="info__social">
-            <a href="https://twitter.com/Rodrigo_CesarC">
+            <a 
+              href="https://twitter.com/Rodrigo_CesarC"
+              target="_blank" rel="noreferrer"
+              style={{textDecoration: "none"}}
+              >
               <BsTwitter />
             </a>
-            <a href="https://www.linkedin.com/in/rodrigocallecastillo/" target="_blank" rel="noreferrer">
+            <a href="https://www.linkedin.com/in/rodrigocallecastillo/" style={{textDecoration: "none"}} target="_blank" rel="noreferrer">
               <BsInstagram />
             </a>
-            <a href="https://www.linkedin.com/in/rodrigocallecastillo/" target="_blank" rel="noreferrer">
+            <a href="https://www.linkedin.com/in/rodrigocallecastillo/" style={{textDecoration: "none"}} target="_blank" rel="noreferrer">
               <AiFillLinkedin />
             </a>
-            <a href="https://github.com/rodrigo-calle" target="_blank" rel="noreferrer">
+            <a href="https://github.com/rodrigo-calle" style={{textDecoration: "none"}} target="_blank" rel="noreferrer">
               <BsGithub />
             </a>            
             </div>
