@@ -9,6 +9,7 @@ const Education = () => {
             <p className="subtitles-education-experience__education">Educación</p>
             <p className="subtitles-education-experience__experience">Experiencia</p>
         </div>
+        <p className="subtitle-responsive-education">Educación</p>
         <div className="experience-and-education-container">
             <div className="education-container-section">
                 <div className="education-container__card">
@@ -36,6 +37,7 @@ const Education = () => {
                     </p>
                 </div>
             </div>
+            <p className="subtitle-responsive-experience">Experience</p>
             <div className="experience-container-section">
                 <div className="experience-container__card">
                     <p className="experience-container__card--title">Desarrollador Web Full Stack JS</p>

@@ -9,6 +9,9 @@
     flex-direction: column;
     padding: 70px 0px;
     //padding-bottom: 70px;
+    .subtitle-responsive-education, .subtitle-responsive-experience {
+        display: none;
+    }
     .subtitles-education-experience{
         display: flex;
         flex-direction: row;
@@ -20,10 +23,12 @@
         .subtitles-education-experience__education {
             color: #fff;
             margin-top: 0px;
+            font-size: 24px;
         }
         .subtitles-education-experience__experience {
             color: #fff;
             margin-top: 0px;
+            font-size: 24px;
         }
     }
     .title-education {
@@ -33,6 +38,7 @@
         font-size: 40px;
         color: #fff;
         margin-bottom: 45px;
+        
         span {
             color: #0A0A0D;
             -webkit-text-stroke-width: 1px;
@@ -51,14 +57,13 @@
             max-height:70vh;
             overflow-y:scroll;
             width: 45%;
-            /* width */
+            font-size: 20px;
+
             &::-webkit-scrollbar {
                 width: 10px;
             }
             
-            /* Track */
             &::-webkit-scrollbar-track {
-                /* background: #f1f1f1;  */
                 background: #000; 
             }
             
@@ -116,6 +121,7 @@
             max-height:70vh;
             overflow-y:scroll;
             width: 45%;
+            font-size: 20px;
             /* width */
             &::-webkit-scrollbar {
                 width: 10px;
@@ -181,3 +187,375 @@
 
 
 }
+
+@media (max-width: $laptops) {
+
+    .education-container {
+        width: 100%;
+        height: fit-content;
+        margin: 0px auto;
+        background-color: #000;
+        display: flex;
+        flex-direction: column;
+        padding: 70px 0px;
+        //padding-bottom: 70px;
+        .subtitle-responsive-education, .subtitle-responsive-experience {
+            display: none;
+        }
+        .subtitles-education-experience{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border-bottom: 1px solid #64BD00;
+            width: 80%;
+            margin: 0px auto;
+            margin-bottom: 30px;
+            .subtitles-education-experience__education {
+                color: #fff;
+                margin-top: 0px;
+            }
+            .subtitles-education-experience__experience {
+                color: #fff;
+                margin-top: 0px;
+            }
+        }
+        .title-education {
+            margin: 0px auto;
+            text-align: center;
+            font-weight: bold;
+            font-size: 40px;
+            color: #fff;
+            margin-bottom: 45px;
+            span {
+                color: #0A0A0D;
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: #64BD00;
+            }
+        }
+    
+        .experience-and-education-container {
+            width: 80%;
+            margin: 0px auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;  
+            
+            .education-container-section {
+                max-height:70vh;
+                overflow-y:scroll;
+                width: 45%;
+                /* width */
+                &::-webkit-scrollbar {
+                    width: 10px;
+                }
+                
+                /* Track */
+                &::-webkit-scrollbar-track {
+                    /* background: #f1f1f1;  */
+                    background: #000; 
+                }
+                
+                /* Handle */
+                &::-webkit-scrollbar-thumb {
+                    /* background: #888; */
+                    background: #64BD00;
+                    border-radius: 7px; 
+                }
+                
+                /* Handle on hover */
+                &::-webkit-scrollbar-thumb:hover {
+                    background: #555; 
+                }
+    
+                .education-container__card{
+                    background-color: #14141A;
+                    width: 100%;
+                    border-radius: 7px;
+                    padding: 15px 0px;
+                    margin-bottom: 40px;
+    
+                    .education-container__card--title {
+                        color: #fff;
+                        font-weight: 600;
+                        width: 95%;
+                        margin: 0px auto;
+                    }
+    
+                    .education-container__card--subtitle {
+                        width: 95%;
+                        margin: 0px auto;
+                        color: #fff;
+                        font-size: 16px;
+                        border-bottom: thin solid #fff;
+                        margin-top: 13px;
+                        padding-bottom: 13px;
+    
+                        span {
+                            background-color: #64BD00;
+                            padding: 2px;
+                            border-radius: 7px;
+                        }
+                    }
+                    .education-container__card--description {
+                        width: 95%;
+                        margin: 0px auto;
+                        color: #fff;
+                        margin-top: 15px;
+                        text-align: justify;
+                    }
+                }
+            }
+            .experience-container-section {
+                max-height:70vh;
+                overflow-y:scroll;
+                width: 45%;
+                /* width */
+                &::-webkit-scrollbar {
+                    width: 10px;
+                }
+    
+                /* Track */
+                &::-webkit-scrollbar-track {
+                    /* background: #f1f1f1;  */
+                    background: #000; 
+                }
+    
+                /* Handle */
+                &::-webkit-scrollbar-thumb {
+                    /* background: #888; */
+                    background: #64BD00;
+                    border-radius: 7px; 
+                }
+    
+                /* Handle on hover */
+                &::-webkit-scrollbar-thumb:hover {
+                    background: #555; 
+                }
+    
+                .experience-container__card{
+                    background-color: #14141A;
+                    width: 100%;
+                    border-radius: 7px;
+                    padding: 15px 0px;
+                    margin-bottom: 40px;
+    
+                    .experience-container__card--title {
+                        color: #fff;
+                        font-weight: 600;
+                        width: 95%;
+                        margin: 0px auto;
+                    }
+    
+                    .experience-container__card--subtitle {
+                        width: 95%;
+                        margin: 0px auto;
+                        color: #fff;
+                        font-size: 16px;
+                        border-bottom: thin solid #fff;
+                        margin-top: 13px;
+                        padding-bottom: 13px;
+    
+                        span {
+                            background-color: #64BD00;
+                            padding: 2px;
+                            border-radius: 7px;
+                        }
+                    }
+                    .experience-container__card--description {
+                        width: 95%;
+                        margin: 0px auto;
+                        color: #fff;
+                        margin-top: 15px;
+                        text-align: justify;
+                    }
+                }
+            }
+        }
+    
+    
+    }
+}
+
+@media (max-width: $mobile) { 
+    .education-container {
+        width: 100%;
+        height: fit-content;
+        margin: 0px auto;
+        background-color: #000;
+        display: flex;
+        flex-direction: column;
+        padding: 70px 0px;
+        //padding-bottom: 70px;
+        .subtitles-education-experience{
+            display: none;
+        }
+        .subtitle-responsive-education, .subtitle-responsive-experience {
+            display: block;
+            color: #fff;
+            width: 90%;
+            margin: 5px auto;
+            padding-bottom: 3px;
+            border-bottom: thin solid #64BD00;
+        }
+        .title-education {
+            margin: 0px auto;
+            text-align: center;
+            font-weight: bold;
+            font-size: 40px;
+            color: #fff;
+            margin-bottom: 45px;
+            span {
+                color: #0A0A0D;
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: #64BD00;
+            }
+        }
+    
+        .experience-and-education-container {
+            width: 90%;
+            margin: 0px auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;  
+            
+            .education-container-section {
+                max-height:200px;
+                overflow-y:scroll;
+                width: 100%;
+                margin-bottom: 20px;
+                border-radius: 7px;
+                /* width */
+                &::-webkit-scrollbar {
+                    width: 10px;
+                }
+                
+                /* Track */
+                &::-webkit-scrollbar-track {
+                    /* background: #f1f1f1;  */
+                    background: #000; 
+                }
+                
+                /* Handle */
+                &::-webkit-scrollbar-thumb {
+                    /* background: #888; */
+                    background: #64BD00;
+                    border-radius: 7px; 
+                }
+                
+                /* Handle on hover */
+                &::-webkit-scrollbar-thumb:hover {
+                    background: #555; 
+                }
+    
+                .education-container__card{
+                    background-color: #14141A;
+                    width: 100%;
+                    border-radius: 7px;
+                    padding: 15px 0px;
+                    margin-bottom: 40px;
+                    height: 170px;
+    
+                    .education-container__card--title {
+                        color: #fff;
+                        font-weight: 600;
+                        width: 95%;
+                        margin: 0px auto;
+                    }
+    
+                    .education-container__card--subtitle {
+                        width: 95%;
+                        margin: 0px auto;
+                        color: #fff;
+                        font-size: 16px;
+                        border-bottom: thin solid #fff;
+                        margin-top: 13px;
+                        padding-bottom: 13px;
+    
+                        span {
+                            background-color: #64BD00;
+                            padding: 2px;
+                            border-radius: 7px;
+                        }
+                    }
+                    .education-container__card--description {
+                        width: 95%;
+                        margin: 0px auto;
+                        color: #fff;
+                        margin-top: 15px;
+                        text-align: justify;
+                    }
+                }
+            }
+            .experience-container-section {
+                max-height:200px;
+                overflow-y:scroll;
+                width: 100%;
+                margin-bottom: 20px;
+                border-radius: 7px;
+                /* width */
+                &::-webkit-scrollbar {
+                    width: 10px;
+                }
+    
+                /* Track */
+                &::-webkit-scrollbar-track {
+                    /* background: #f1f1f1;  */
+                    background: #000; 
+                }
+    
+                /* Handle */
+                &::-webkit-scrollbar-thumb {
+                    /* background: #888; */
+                    background: #64BD00;
+                    border-radius: 7px; 
+                }
+    
+                /* Handle on hover */
+                &::-webkit-scrollbar-thumb:hover {
+                    background: #555; 
+                }
+    
+                .experience-container__card{
+                    background-color: #14141A;
+                    width: 100%;
+                    border-radius: 7px;
+                    padding: 15px 0px;
+                    margin-bottom: 40px;
+                    height: 170px;
+    
+                    .experience-container__card--title {
+                        color: #fff;
+                        font-weight: 600;
+                        width: 95%;
+                        margin: 0px auto;
+                    }
+    
+                    .experience-container__card--subtitle {
+                        width: 95%;
+                        margin: 0px auto;
+                        color: #fff;
+                        font-size: 16px;
+                        border-bottom: thin solid #fff;
+                        margin-top: 13px;
+                        padding-bottom: 13px;
+    
+                        span {
+                            background-color: #64BD00;
+                            padding: 2px;
+                            border-radius: 7px;
+                        }
+                    }
+                    .experience-container__card--description {
+                        width: 95%;
+                        margin: 0px auto;
+                        color: #fff;
+                        margin-top: 15px;
+                        text-align: justify;
+                    }
+                }
+            }
+        }
+    
+    
+    }
+ }

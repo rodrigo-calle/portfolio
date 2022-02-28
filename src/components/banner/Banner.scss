@@ -23,44 +23,51 @@
     margin-left: auto; 
     margin-right: auto;
     flex-direction: column;
-    row-gap: 5%;
+    /* row-gap: 5%; */
+    justify-content: space-around;
 }
-.banner-container__header{
-    margin-top: 25px;
+.banner-container .banner-container__header{
+    margin-top: 0px;
     color: #fff;
     display: flex;
     align-items: center;
     flex-direction: row;
-    justify-content: space-around;
-    width: 80%;
+    justify-content: space-between;
+    width: 100%;
+
 }
+
 .banner-container__header .logo{
     font-size: 32px;
     font-weight: 600;
     width: fit-content;
 }
-.main-menu-container {
+.continer-header-container .banner-container__header .main-menu .main-menu-container {
     display: flex;
     flex-direction: row;
     padding: 0px;
-    width: fit-content;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
 }
 .continer-header-container .banner-container__header .main-menu{
     display: flex;
     flex-direction: row;
-    width: 65%;
+    width: 60%;
+    justify-content: flex-end;
+
 }
 .main-menu__item .icon-menu{
     margin-right: 0px;
 }
 .banner-container__header .main-menu .main-menu-container .main-menu__item{
-    list-style: none;
     display: flex;
     align-items: center;
     font-size: 22px;
     margin-right: 0%;
     flex-direction: row;
     cursor: pointer;
+
 }
 .banner-container__header .main-menu .item-active{
     color: #64BD00;
@@ -68,7 +75,7 @@
 .banner-content{
     display: flex;
     color: #fff;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
     align-content: space-around;
 
@@ -176,7 +183,7 @@
     right: 0;
 }
 
-@media (min-width: $laptops) {
+@media (max-width: $laptops) {
 
     .banner-container{
         width: 100%;
@@ -355,181 +362,148 @@
    
 }
 
-@media (min-width: $mobile) {
-    .banner-container{
-        width: 100%;
-        height: 100vh;
-    }
-    .banner-container__image{
-        width: 100%;
-        height: 100%;
-    }
-    .icon-active{
-        color: aqua;
-    }
-    
+@media (max-width: $nestHub) {
     .banner-container .continer-header-container{
-        position: absolute;
-        top: 0px;
-        width: 80%;
-        display: flex;
-        height: 100vh;
-        left: 0; 
-        right: 0; 
-        margin-left: auto; 
-        margin-right: auto;
-        flex-direction: column;
-        row-gap: 5%;
-    }
-    .banner-container .continer-header-container .banner-container__header{
-        margin-top: 25px;
-        color: #fff;
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-        display: none;
-    }
-    .banner-container__header .logo{
-        font-size: 28px;
-        width: fit-content;
-    }
-    .banner-container__header .main-menu {
-        width: 65%;
-    }
-    .banner-container__header .main-menu .main-menu-container{
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        justify-content: space-between;
-    }
-
-    .main-menu__item .icon-menu{
-        margin-right: 0px;
-    }
-    .banner-container__header .main-menu .main-menu-container .main-menu__item{
-        list-style: none;
-        display: flex;
-        align-items: center;
-        font-size: 18px;
-        flex-direction: row;
-        cursor: pointer;
-        flex-wrap: wrap;
-    }
-    .banner-container__header .main-menu .item-active{
-        color: #64BD00;
-    }
-    .banner-content{
-        display: flex;
-        color: #fff;
-        justify-content: space-between;
-        width: 100%;
-        align-content: space-around;
-    
-    }
-    .banner-content__image--photo{
-        height: 280px;
-        width: 280px;
-        background-color: #929292;
-        border-radius: 50%;
-        position: relative;
-    }
-    .banner-content__image--photo .profile-photo{
-        height: 260px;
-        width: 260px;
-        border-radius: 50%;
-        position: absolute;
-        left: 0; 
-        right: 0; 
-        margin: auto;
-        top: 0px;
-        bottom: 0px;
-    }
-    .banner-content__info{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        width: 65%;
-    
-    }
-    .banner-content__info .info__regard{
-        color: #fff;
-        font-weight: bold;
-        font-size: 20px;
-        margin: 0px;
-        margin-bottom: 25px;
-    
-    }
-    .banner-content__info .info__presentation{
-        color: #fff;
-        font-size: 46px;
-        font-weight: bold;
-        margin: 0px;
-        margin-bottom: 25px;
-    }
-    .banner-content__info .info__presentation span{
-        color: #64BD00;
-    }
-    .banner-content__info .info__description{
-        color: #fff;
-        text-align: justify;
-        font-size: 18px;
-        margin: 0px;
-        margin-bottom: 30px;
-        width: 70%;
-    }
-    .banner-content__info .info__social{
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 36px;
-    }
-    .banner-content__info .info__social svg{
-        height: 24px;
-        width: 24px;
-        margin: 0px 9px;
-        cursor: pointer;
-    }
-    .info__buttons .about-btn, .info__buttons .portfolio-btn{
-        width: 200px;
-        height: 45px;
-        border-radius: 40px;
-        font-size: 18px;
-        border: none;
-        margin-right: 30px;
-        cursor: pointer;
-        color: #fff;
-    }
-    .info__buttons .about-btn{
-        background-color: #929292;
-    }
-    .info__buttons .portfolio-btn{
-        background-color: #64BD00;
-    }
-    
-    .scroll-container{
-        width: 100%;
-    }
-    .scroll-contianer__animate{
-        margin: 0px auto;
-        width: 13px;
-        height: 40px;
-        border-radius: 40px;
-        border: 3px solid #fff;
-        padding: 10px;
-        cursor: pointer;
-    }
-    
-    .scroll-contianer__animate .scroll-point{
-        background-color: #fff;
-        width: 15px;
-        height: 15px;
-        position: absolute;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 50%;
-        left: 0;
-        right: 0;
-    }
-   
+        width: 90%;
+    }   
 }
+
+@media (max-width: $mobile) {
+
+    .banner-container {
+        position: relative;
+        text-align: center;
+        .banner-container__image{
+            width: 100%;
+            height: 100%;
+            position: relative;
+
+        }
+        .continer-header-container{
+            top: 0px;
+            width: 90%;
+            flex-direction: column;
+            row-gap: 5%;
+            left: 0;
+            right: 0;
+            margin: 0px auto;
+            .banner-container__header{
+                display: none;
+            }
+    
+            
+            .banner-content{
+                display: flex;
+                color: #fff;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 100%;
+                align-content: space-around;
+                .banner-content__image {
+                    .banner-content__image--photo{
+                        height: 250px;
+                        width: 250px;
+                        margin: 20px auto;
+
+                        .profile-photo{
+                            height: 230px;
+                            width: 230px;
+                        }
+                    }
+                }
+    
+                .banner-content__info{
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                    width: 100%;
+                    .info__regard{
+                        font-size: 18px;
+                        margin-bottom: 14px;                
+                    }
+                    .info__presentation{
+                        color: #fff;
+                        font-size: 25px;
+                        font-weight: bold;
+                        margin: 0px;
+                        margin-bottom: 14px;
+                        span{
+                            color: #64BD00;
+                        }
+                    }
+                    .info__description{
+                        color: #fff;
+                        text-align: justify;
+                        font-size: 18px;
+                        margin: 0px;
+                        margin-bottom: 15px;
+                        width: 100%;
+                    }
+                    .info__social{
+                        margin-bottom: 15px;
+                        svg{
+                            height: 24px;
+                            width: 24px;
+                            margin: 0px 9px;
+                            cursor: pointer;
+                        }
+                    }
+                    .info__buttons {
+                        .about-btn{
+                            background-color: #929292;
+                            width: 200px;
+                            height: 45px;
+                            border-radius: 40px;
+                            font-size: 18px;
+                            border: none;
+                            margin-right: 0px;
+                            cursor: pointer;
+                            color: #fff;
+                            margin-bottom: 15px;
+                        }
+                        .portfolio-btn{
+                            width: 200px;
+                            height: 45px;
+                            border-radius: 40px;
+                            font-size: 18px;
+                            border: none;
+                            margin-right: 0px;
+                            cursor: pointer;
+                            color: #fff;
+                            background-color: #64BD00;
+                        }
+                    }
+    
+                }
+    
+            }
+    
+            .scroll-container{
+                display: none;
+                width: 100%;
+                .scroll-contianer__animate{
+                    margin: 0px auto;
+                    width: 13px;
+                    height: 40px;
+                    border-radius: 40px;
+                    border: 3px solid #fff;
+                    padding: 10px;
+                    cursor: pointer;
+                    .scroll-point{
+                        background-color: #fff;
+                        width: 15px;
+                        height: 15px;
+                        position: absolute;
+                        margin-left: auto;
+                        margin-right: auto;
+                        border-radius: 50%;
+                        left: 0;
+                        right: 0;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+    
