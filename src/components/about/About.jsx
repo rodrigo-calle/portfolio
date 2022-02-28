@@ -16,7 +16,7 @@ const About = () => {
                        de proyectos que trabajen con metodologías ágiles como SCRUM y tradicionales. 
                        Actualmente estoy en búsqueda de mi primer empleo como desarrollador web profesional.</p>
                     <a 
-                        href="rodrigo-calle-cv.pdf"
+                        href="rodrigo-calle-castillo-cv.pdf"
                         download="rodrigo-calle-cv"
                         style={{textDecoration: "none"}}
                         >
@@ -35,7 +35,7 @@ const About = () => {
                         <p className="about-item">Twitter:<span> @rodcode</span></p>
                         <p className="about-item">Correo:<span> rodrigoc_0@hotmail.com</span></p>
                         <p className="about-item">Idiomas:<span> Español, Ingles</span></p>
-                        <p className="about-item">Sitio Web:<span> rodrigocalle.dev</span></p>
+                        <p className="about-item">Sitio Web:<span> https://grupo-rosamel.web.app/</span></p>
                     </div>
                 </div>
             </div>
