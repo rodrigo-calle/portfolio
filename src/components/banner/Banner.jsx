@@ -9,7 +9,7 @@ import {
   BsInstagram,
   BsGithub,
 } from "react-icons/bs";
-import { BiRocket } from "react-icons/bi";
+// import { BiRocket } from "react-icons/bi";
 
 import "./Banner.scss";
 
@@ -25,37 +25,59 @@ const Banner = () => {
         <div className="banner-container__header">
           <div className="logo">RODRIGO</div>
           <div className="main-menu">
-          <ul class="main-menu-container">
+          <ul className="main-menu-container">
             <li className="main-menu__item item-active">
               {" "}
               <AiFillHome className="icon-menu" />
-              <p className="title-menu">Home</p>
+              <p className="title-menu">Inicio</p>
             </li>
-            <li className="main-menu__item">
+          <a 
+            href="#about-section"
+            style={{textDecoration: "none", color: "white"}}
+            >
+           <li className="main-menu__item">
               {" "}
               <BsFillPersonFill className="icon-menu" />
-              <p className="title-menu">Abount</p>
+              <p className="title-menu">Sobre mi</p>
             </li>
-            <li className="main-menu__item">
+            </a>
+{/*             <li className="main-menu__item">
               {" "}
               <BiRocket className="icon-menu" />
               <p className="title-menu">Servicios</p>
-            </li>
+            </li> */}
+            <a 
+            href="#portfolio-section"
+            style={{textDecoration: "none", color: "white"}}
+            >
             <li className="main-menu__item">
               {" "}
               <BsFillBriefcaseFill className="icon-menu" />
               <p className="title-menu">Portafolio</p>
             </li>
+            </a>
+            <a 
+            href="https://www.youtube.com/channel/UCQTu0e9VvdyH_rAtfsrdStQ" 
+            target="_blank" 
+            rel="noreferrer"
+            style={{textDecoration: "none", color: "white"}}
+            >
             <li className="main-menu__item">
               {" "}
               <BsYoutube className="icon-menu" />
               <p className="title-menu">Canal</p>
             </li>
+            </a>
+            <a 
+            href="#contact-section"
+            style={{textDecoration: "none", color: "white"}}
+            >
             <li className="main-menu__item">
               {" "}
               <BsPersonSquare className="icon-menu" />
               <p className="title-menu">Contacto</p>
             </li>
+            </a>
           </ul>            
           </div>
         </div>
@@ -82,12 +104,22 @@ const Banner = () => {
               <BsGithub />
             </div>
             <div className="info__buttons">
+            <a 
+            href="#about-section"
+            style={{textDecoration: "none", color: "white"}}
+            >
               <button type="button" className="about-btn">
                 <BsFillPersonFill /> Más sobre mi
               </button>
+            </a>
+            <a 
+            href="#portfolio-section"
+            style={{textDecoration: "none", color: "white"}}
+            >
               <button type="button" className="portfolio-btn">
                 <BsFillBriefcaseFill /> Mi Portafolio
               </button>
+            </a>
             </div>
           </div>
         </div>

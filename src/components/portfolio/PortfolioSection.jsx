@@ -49,7 +49,7 @@ const PortFolioSection = () => {
     }
 console.log(projects)
     return(
-        <div className="portfolio-container">
+        <div className="portfolio-container" id="portfolio-section">
             <h1 className="title-portfolio">MI<span> PORTAFOLIO</span></h1>
             <p className="btns-list-projects">
                 <span className="btn-all active" onClick={applyAllProjects}>Todos</span>
@@ -77,7 +77,12 @@ console.log(projects)
                                 </ul>
                             
                             <div className="btns-projects-container">
-                                <p className="go-to-proyect">Ir a Proyecto</p>
+                                <a href={proyect.url}
+                                   target="_blank" rel="noreferrer" 
+                                   style={{textDecoration: "none"}}
+                                >
+                                    <p className="go-to-proyect">Ir a Proyecto</p>
+                                </a>
                             </div>    
                         </div>
                     ))

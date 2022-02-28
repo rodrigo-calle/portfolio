@@ -36,7 +36,7 @@ const Knowledge = () => {
                     {   
                         knowledgeOne.map((item)=>(
                             <div className="knowledge-item" key={item.id}>
-                                <label className="label-knowledge" for="vol">  
+                                <label className="label-knowledge" htmlFor="vol">  
                                     {item.name}
                                 </label><br />
                                 <input className="knowledge-range" type="range" id="vol" value={item.level} name="vol" min="0" max="10" /> <br/>
@@ -48,7 +48,7 @@ const Knowledge = () => {
                     {   
                         knowledgeTwo.map((item)=>(
                             <div className="knowledge-item" key={item.id}>
-                                <label className="label-knowledge" for="vol">  
+                                <label className="label-knowledge" htmlFor="vol">  
                                     {item.name}
                                 </label><br />
                                 <input className="knowledge-range" type="range" id="vol" value={item.level} name="vol" min="0" max="10" /> <br/>
@@ -56,10 +56,10 @@ const Knowledge = () => {
                         ))
                     }
 
-                    <p className="label-knowledge"></p>
+                {/*     <p className="label-knowledge"></p> */}
                 </div>
             </div>
-            <div className="second-container-knowledges">
+{/*             <div className="second-container-knowledges">
                 <div className="first-section-knowledges">
                     <p className="label-knowledge"></p>
 
@@ -67,8 +67,8 @@ const Knowledge = () => {
                 <div className="second-section-knowledges">
                     <p className="label-knowledge"></p>
                 </div>
-            </div>
-            <div className="knowledges-container-button">
+            </div> */}
+{/*             <div className="knowledges-container-button">
                 <button className="btn-more-knowlodge" type="button">
                     <p>Listar más</p>
                     <img 
@@ -76,7 +76,7 @@ const Knowledge = () => {
                         alt="bottom arrow"
                     />
                 </button>
-            </div>
+            </div> */}
             
         </div>
     )
