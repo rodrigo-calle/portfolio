@@ -5,9 +5,7 @@ import './Knowledge.scss';
 const Knowledge = () => {
     const [knowledgeOne, setKnowledgeOne] = useState([]);
     const [knowledgeTwo, setKnowledgeTwo] = useState([]);
-    const handleChange = () => {
 
-    }
     useEffect(()=> {
         const handlerGetAllData = () => {
             let firstKnowledgeSection = [];
