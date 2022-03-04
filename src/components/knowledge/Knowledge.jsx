@@ -5,6 +5,9 @@ import './Knowledge.scss';
 const Knowledge = () => {
     const [knowledgeOne, setKnowledgeOne] = useState([]);
     const [knowledgeTwo, setKnowledgeTwo] = useState([]);
+    const handleChange = () => {
+
+    }
     useEffect(()=> {
         const handlerGetAllData = () => {
             let firstKnowledgeSection = [];
@@ -39,7 +42,7 @@ const Knowledge = () => {
                                 <label className="label-knowledge" htmlFor="vol">  
                                     {item.name}
                                 </label><br />
-                                <input className="knowledge-range" type="range" id="vol" value={item.level} name="vol" min="0" max="10" /> <br/>
+                                <input className="knowledge-range" type="range" id="vol" readOnly={true} defaultValue={item.level} name="vol" min="0" max="10" /> <br/>
                             </div>
                         ))
                     }

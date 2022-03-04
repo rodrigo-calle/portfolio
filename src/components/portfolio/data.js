@@ -6,7 +6,7 @@ const proyects = [
         description: "Aplicación tipo red social que permite registrar y gestionar negocios a los dueños de los mismos, publicar promociones y ser contactados por clientes quienes tienen acceso a la plataforma",       
         technologies: ["React", "NodeJS", "MongoDB", "Express","SASS", "Styled Components", "Redux", "JWT"],
         url: "https://kusqi.netlify.app/",
-        image: "/images/kusqi-project.png"
+        image: "/images/kusqi-project1.png"
     },
     {   
         id: 2,

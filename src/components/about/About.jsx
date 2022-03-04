@@ -28,14 +28,14 @@ const About = () => {
                     <div className="profile__column-one ">
                         <p className="about-item">Nombre:<span> Rodrigo Calle</span></p>
                         <p className="about-item">Cumpleaños:<span> 29 abril</span></p>
-                        <p className="about-item">Nacimiento:<span> Cerro de Pasco - Perú</span></p>
+                        <p className="about-item">Nacimiento:<span> Pasco - Perú</span></p>
                         <p className="about-item">Linkedin:<span> Rodrigo Calle</span></p>
                     </div>
                     <div className="profile__column-two ">
                         <p className="about-item">Twitter:<span> @rodcode</span></p>
                         <p className="about-item">Correo:<span> rodrigoc_0@hotmail.com</span></p>
                         <p className="about-item">Idiomas:<span> Español, Ingles</span></p>
-                        <p className="about-item">Sitio Web:<span> https://grupo-rosamel.web.app/</span></p>
+                        <p className="about-item">Sitio Web:<span> https://rodrigocalle-dev.web.app/</span></p>
                     </div>
                 </div>
             </div>

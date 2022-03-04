@@ -32,13 +32,20 @@ const education = [
 export const experience =[
     {
         id: 1, 
-        date: "2018-2018",
-        name: "Supervisor de Infraestructura",
-        company: "Logiconsult SAC",
-        description: "LOGROS \n -Se incrementó un 5% la contactabilidad de clientes mediante los mensajes masivos con la implementación y administración del GoIP. -Implementé un sistema de cableado estructurado, lo cual bajó el índice de caídas de servicios en un 11% en las áreas administrativas de la empresa. -Se gestionó y administró la plataforma Windows Server 2012, estableciendo políticas de Gpo, usuarios y computadoras. -Implementé y administré el Directorio Activo de Software Libre Zentyal, minimizando los costos de licencia de software. -Implementé un servidor virtual Proxmox, reduciendo recursos y espacio físico en el DataCenter. Asimismo, se mejoró la administración de los mismos. -Implementar y administrar servidores virtuales como Proxmox y VMware"
+        date: "2021-2022",
+        name: "Desarrollador Full Stack JavaScript",
+        company: "Make It Real",
+        description: "DESCRIPCIÓN \n -Participé de la planeación, diseño y desarrollo de REPECO, una aplicación web multiusario hecha con MERN (Mongo, Express, React, Node) para la reserva de cuartos de hoteles y administración de los mismos .\n -Diseñé aplicaciones web haciendo uso  del software Figma. -Formé parte del equipo de desarrollo donde se hizo uso del Marco Ágil SCRUM  durante todo el proceso de desarrollo y entrega del producto(aplicación web). -Planie y desarrollé Kusqi, una aplicación tipo red socila que permite la interacción entre negocios y clientes. Usé el stack MERN para el desarrollo. -Hice despliegue de aplicaciones en plataformas remotas como Firebase, Heroku y Netlify haciendo uso de CD. -Realizé pruebas End To End con Cypress a las aplicaciones desarrolladas"
     },
     {
         id: 2, 
+        date: "2017-2018",
+        name: "Soporte TI",
+        company: "Logiconsult SAC",
+        description: "FUNCIONES \n -Atender los ticket y llamadas de incidencias TI y solucionarlos. - Instalación y configuración de huelleros. -Mantenimiento preventivo y correctivo de computadoras dentro de la empresa. -Instalación de todo tipo de programas, según requiera el usuario. -Instalación de controladores remotos (VNC, ANYDESK, TEAMWEAVER) y soporte desde ello. -Instalación y mantenimiento de impresoras IP. -Configuración de teléfonos VoIP."
+    },
+    {
+        id: 3, 
         date: "2017-2018",
         name: "Soporte TI",
         company: "Logiconsult SAC",

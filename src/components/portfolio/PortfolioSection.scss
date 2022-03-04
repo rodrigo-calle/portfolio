@@ -70,6 +70,7 @@
                 height: 90px;
                 font-size: 18px;
                 overflow-y:scroll;
+                border: thin solid #000;
                 &::-webkit-scrollbar {
                     width: 10px;
                 }
@@ -103,7 +104,9 @@
                 height: 80px;
                 overflow-y:scroll;
                 font-size: 18px;
+                border: thin solid #000;
                 &::-webkit-scrollbar {
+
                     width: 10px;
                 }
                 
@@ -126,6 +129,7 @@
                 }
                 .technologies-title {
                     margin: 0 auto;
+                    font-weight: bold;
                     text-align: center;
                 }
                 li {
@@ -219,6 +223,7 @@
                     text-align: justify;
                     height: 90px;
                     overflow-y:scroll;
+
                     &::-webkit-scrollbar {
                         width: 10px;
                     }

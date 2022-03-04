@@ -5,11 +5,9 @@ import { getAllProjects} from './data';
 const PortFolioSection = () => {
     const [projects, setProjects] = useState([]);
     
-
     useEffect(() =>{
         const getProjects = () => {
             const response = getAllProjects();
-            console.log(response)
             setProjects(response);
         }
         getProjects();
@@ -47,7 +45,6 @@ const PortFolioSection = () => {
         document.querySelector('.btn-web-pages').classList.add('active')
         document.querySelector('.btn-web-aplication').classList.remove('active')
     }
-console.log(projects)
     return(
         <div className="portfolio-container" id="portfolio-section">
             <h1 className="title-portfolio">MI<span> PORTAFOLIO</span></h1>
@@ -58,26 +55,27 @@ console.log(projects)
             </p>
             <div className="portfolio-projects-container">
                 {
-                    projects?.map((proyect)=> (
+                    projects?.map((project)=> (
                         <div 
-                            key={proyect?.id} 
+                            key={project?.id} 
                             className="portfolio-projects-container__card"
-                            style={{'background-image': `url(${proyect?.image})`, 'background-size': 'cover'}}
+                        /*    style={{'background-image': `url(${proyect?.image})`, 'background-size': 'cover'}}*/
+                            style={{'background': '#ffffff' }}
                         >
-                            <p className="title-proyect">{proyect?.name}</p>
-                            <p className="description-proyect">{proyect?.description}</p>
+                            <p className="title-proyect">{project?.name}</p>
+                            <p className="description-proyect">{project?.description}</p>
                                <ul className="technologies">
                                 <p className="technologies-title">Tecnologías</p>
-                               {     proyect?.technologies.map((technology) => (
+                               {     project?.technologies.map((technology) => (
                                 
-                                        <li>{technology}</li>
+                                        <li key={Math.random()}>{technology}</li>
                                     
                                 ))
                             }
                                 </ul>
                             
                             <div className="btns-projects-container">
-                                <a href={proyect.url}
+                                <a href={project.url}
                                    target="_blank" rel="noreferrer" 
                                    style={{textDecoration: "none"}}
                                 >

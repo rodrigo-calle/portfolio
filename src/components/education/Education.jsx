@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Education.scss';
 import {getAllEducation, getAllExperience} from './data'
-import { isValidInputTimeValue } from "@testing-library/user-event/dist/utils";
 
 const Education = () => {
     const [education, setEducation] = useState([]);
