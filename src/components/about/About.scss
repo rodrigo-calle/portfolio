@@ -29,7 +29,11 @@
         align-items: center;
         margin-top: 35px;
         .profile-section{
-            width: 47%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
         .presentation {
             .presentation__title{
@@ -60,6 +64,7 @@
                 font-weight: 600;
                 font-size: 20px;
                 cursor: pointer;
+                margin: 0px auto;
             }
             
         }
